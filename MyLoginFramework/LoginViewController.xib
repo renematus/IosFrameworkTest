@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="LoginFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="NBd-DW-M3b" id="A0i-Un-FKs"/>
+                <outlet property="passwordTextField" destination="gd5-UR-Xmf" id="y5s-5b-MVI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-pe-Mny">
+                    <rect key="frame" x="37" y="80" width="41" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-DW-M3b">
+                    <rect key="frame" x="194" y="67" width="110" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gd5-UR-Xmf">
+                    <rect key="frame" x="194" y="126" width="110" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-h3-Kq6">
+                    <rect key="frame" x="245" y="207" width="47" height="30"/>
+                    <state key="normal" title="Sign in"/>
+                    <connections>
+                        <action selector="signIn:" destination="-1" eventType="touchUpInside" id="DMc-cG-u03"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5q-Tl-dcE">
+                    <rect key="frame" x="37" y="139" width="74" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ydw-h3-Kq6" firstAttribute="top" secondItem="gd5-UR-Xmf" secondAttribute="bottom" constant="47" id="0la-wL-GIc"/>
+                <constraint firstItem="gd5-UR-Xmf" firstAttribute="top" secondItem="NBd-DW-M3b" secondAttribute="bottom" constant="25" id="3zo-8E-Pk4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NBd-DW-M3b" secondAttribute="trailing" constant="110" id="9cn-Xt-NVL"/>
+                <constraint firstItem="i5q-Tl-dcE" firstAttribute="bottom" secondItem="gd5-UR-Xmf" secondAttribute="bottom" id="AqN-jp-QX1"/>
+                <constraint firstItem="NBd-DW-M3b" firstAttribute="leading" secondItem="gd5-UR-Xmf" secondAttribute="leading" id="Bu5-3S-xpK"/>
+                <constraint firstItem="GMa-pe-Mny" firstAttribute="bottom" secondItem="NBd-DW-M3b" secondAttribute="bottom" id="DI3-TA-mVo"/>
+                <constraint firstItem="NBd-DW-M3b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="23" id="Fim-hw-eJ5"/>
+                <constraint firstItem="GMa-pe-Mny" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="GYQ-1L-yw9"/>
+                <constraint firstItem="NBd-DW-M3b" firstAttribute="trailing" secondItem="gd5-UR-Xmf" secondAttribute="trailing" id="UQs-L3-ZEU"/>
+                <constraint firstItem="gd5-UR-Xmf" firstAttribute="leading" secondItem="i5q-Tl-dcE" secondAttribute="trailing" constant="83" id="d9K-cc-10N"/>
+                <constraint firstItem="GMa-pe-Mny" firstAttribute="leading" secondItem="i5q-Tl-dcE" secondAttribute="leading" id="kev-Fv-1xB"/>
+                <constraint firstItem="ydw-h3-Kq6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="245" id="sMr-ND-4l0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="136"/>
+        </view>
+    </objects>
+</document>
